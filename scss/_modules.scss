@@ -1,0 +1,254 @@
+.container {
+  width: 94%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
+}
+
+.title {
+  font-family: var(--f-family-fairplay);
+}
+
+.light-400 {
+  font-weight: 400;
+}
+
+h1.title {
+  font-size: 28px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.description {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+  color: var(--clr-gray2) !important;
+  gap: 8px;
+  margin-bottom: 20px;
+  svg {
+    margin-top: 5px;
+    width: 120px;
+    height: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 630px;
+
+    svg {
+      width: 40px;
+      height: 12px;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.main-grid {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.recipe-stats {
+  display: flex;
+  flex-direction: column;
+  column-gap: 12px;
+  font-size: 9px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 310px) {
+    font-size: 11px;
+  }
+
+  .stat-yields {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+    .stat-box {
+      .material-icons {
+        color: var(--clr-orange);
+      }
+
+      .yield {
+        .time {
+          color: var(--clr-orange);
+        }
+      }
+    }
+  }
+
+  .stat-time {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .stat-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-weight: 600;
+
+    .label {
+      text-transform: uppercase;
+      color: var(--clr-gray3);
+    }
+
+    .material-icons {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 55px 45px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    gap: 35px;
+
+    .stat-t {
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &.stat-time {
+        gap: 35px;
+      }
+
+      .stat-box {
+        gap: 10px;
+      }
+
+      .label {
+        font-size: 10px;
+      }
+
+      .time {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .material-icons {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.ingredients-wrapper {
+  @media screen and (min-width: 768px) {
+    width: 65%;
+  }
+}
+
+.recipe-ingredients {
+  margin-bottom: 40px;
+
+  h3.title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    .ingredient {
+      &-title {
+        font-size: 20px;
+        margin: 24px 0;
+      }
+
+      &-steps {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 15px;
+        line-height: 25px;
+
+        input {
+          border: 2px solid red !important;
+          display: block;
+          width: 23px;
+          height: 23px;
+        }
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.instructions {
+  .title {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+
+  .instruction {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 22px;
+    margin-bottom: 35px;
+
+    &-number {
+      width: 35px;
+      height: 35px;
+      background-color: var(--clr-orange);
+      color: #fff;
+      font-family: var(--f-family-fairplay);
+      font-weight: 700;
+      font-size: 24px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 5px;
+
+      span {
+        border: 2px solid transparent;
+        display: block;
+        height: 100%;
+      }
+    }
+
+    &-text {
+      width: calc(100% - 35px);
+      display: block;
+    }
+  }
+}
+.source-link {
+  color: var(--clr-gray3);
+}
+
+.attribution {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--clr-gray4);
+
+  a {
+    &.attribution-user {
+      font-weight: 500;
+      text-decoration: underline;
+    }
+    color: var(--clr-orange);
+  }
+}
